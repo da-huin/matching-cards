@@ -1,0 +1,71 @@
+.piece {
+    background-color: gray;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin: 3px;
+    animation: fromshow 1s 1;
+    animation-fill-mode: forwards;
+}
+
+.piece:hover {
+    background-color: antiquewhite;
+}
+
+.piece.show {
+    background-color: floralwhite;
+    position: relative;
+    animation: toshow 1s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes toshow {
+    0% {
+        background-color: gray;
+        color: transparent;
+    }
+    100% {
+        background-color: floralwhite;
+        color: black;
+    }
+}
+
+@keyframes fromshow {
+    0% {
+        background-color: floralwhite;
+        color: black;
+    }
+    100% {
+        background-color: gray;
+        color: transparent;
+    }
+}
+
+.level {
+    font-size: 15px;
+    position: static;
+}
+
+.point {
+    position: static;
+    font-size: 15px;
+}
+
+.level::before {
+    content: "LEVEL: ";
+}
+
+.point::before {
+    content: "POINT: ";
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}

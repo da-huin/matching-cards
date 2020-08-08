@@ -1,0 +1,61 @@
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<link rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class='info' style="text-align:center;">
+        <span class='level' style="margin-right: 15px">1</span>
+        <span class='point'>0</span>
+    </div>
+    <div class='game'>
+        <div class='test'>
+        </div>
+    </div>
+    <br>
+    <div class='test2'></div>
+</body>
+<script src='card_right.js'></script>
+<script src='card_right_tree.js'></script>
+
+<script>
+    var level = 1;
+    var point = 0;
+    $(document).bind('dragstart', function () { return false; });
+    $(document).bind('selectstart', function () { return false; });
+
+    AppendNewTree(2);
+    function AppendNewTree(size) {
+        var tree = new CardRightTree({
+            cardright: new CardRight(size),
+            mapindex: 0,
+            $parent: $('.test'),
+            first_showtime: 3000,
+            figures: [],
+            oncomplete: function () {
+                setTimeout(function () {
+                    AppendNewTree(size + 2);
+                }, 1000);
+                level++;
+                $('.level').text(level);
+
+                return false;
+            },
+            onright: function () {
+                point++;
+                $('.point').text(point);
+
+                console.log("right");
+            },
+            onnotright: function () {
+                point--;
+                $('.point').text(point);
+                console.log("not right");
+            }
+
+        });
+        tree.Append();
+    }
+
+</script>
