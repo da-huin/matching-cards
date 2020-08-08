@@ -19,25 +19,30 @@
 ---
 
 <p align="center"> 
-    <br> Simple Matching Cards Game
-</p>
 
+    <br> Simple Matching Cards Game
+
+</p>
 
 ## 📝 Table of Contents
 
-- [Getting Started](#getting_started)
-- [Acknowledgments](#acknowledgement)
+* [Getting Started](#getting_started)
+* [Acknowledgments](#acknowledgement)
+
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
 * Just run index.html
 
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="./static/ingame.png" alt="Project logo" ></a>
+
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
-- Title icon made by [Freepik](https://www.flaticon.com/kr/authors/freepik).
+* Title icon made by [Freepik](https://www.flaticon.com/kr/authors/freepik).
 
-- If you have a problem. please make [issue](https://github.com/da-huin/matching_cards/issues).
+* If you have a problem. please make [issue](https://github.com/da-huin/matching_cards/issues).
 
-- Please help develop this project 😀
+* Please help develop this project 😀
 
-- Thanks for reading 😄
+* Thanks for reading 😄
