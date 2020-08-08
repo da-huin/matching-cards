@@ -19,10 +19,14 @@
 ---
 
 <p align="center"> 
-
-    <br> Simple Matching Cards Game
+    <br>
+    Simple Matching Cards Game
 
 </p>
+
+## 🧐 About <a name = "about"></a>
+
+![ingame.png](./static/ingame.png)
 
 ## 📝 Table of Contents
 
@@ -34,8 +38,6 @@
 
 * Just run index.html
 
-  <a href="" rel="noopener">
- <img width=200px height=200px src="./static/ingame.png" alt="Project logo" ></a>
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
